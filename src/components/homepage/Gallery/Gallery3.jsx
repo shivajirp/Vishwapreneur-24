@@ -1,30 +1,19 @@
 import React, { useState, useEffect } from "react";
 const Gallery = () => {
-  const initialImagesOld = [
-    "https://res.cloudinary.com/da5mmxnn3/image/upload/v1674560786/VP-23/3_yvc5dl.jpg",
-    "https://res.cloudinary.com/da5mmxnn3/image/upload/v1675081788/vp-webp/1_1_irebrg.webp",
-    "https://res.cloudinary.com/da5mmxnn3/image/upload/v1675082300/vp-webp/6_fese08.webp",
-    "https://res.cloudinary.com/da5mmxnn3/image/upload/v1675082297/vp-webp/81_grisaj.webp",
-    "https://edcviit.com/vishwapreneur/assets/img/gallery/tickets1.png",
-    "https://res.cloudinary.com/da5mmxnn3/image/upload/v1675082950/vp-webp/s1_arvuep1_fmj4bg.webp",
-    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp",
-    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp",
-    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(78).webp",
-    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(79).webp",
-  ];
+
   const initialImages = [
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081973/jbnz0qjrpjltls4rrrzz.png",
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081973/lyz84st3hxvjvslp7mak.png",
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081973/urcayxxw1sjyjewhddms.png",
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081973/hjgeidhqmjaqrd45tatk.png",
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081973/bqfpjgn9jt0irtgjd1aw.png",
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081972/mrejx4b5kwbn6nvf1xhf.png",
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081973/jbnz0qjrpjltls4rrrzz.png",
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081973/lyz84st3hxvjvslp7mak.png",
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081973/urcayxxw1sjyjewhddms.png",
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081973/hjgeidhqmjaqrd45tatk.png",
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081973/bqfpjgn9jt0irtgjd1aw.png",
-    "https://res.cloudinary.com/dwrlwv8gz/image/upload/v1706081972/mrejx4b5kwbn6nvf1xhf.png",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247438/vp21/g2_xbem3z.webp",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247310/vp21/g4_obhq8o.webp",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247310/vp21/g6_jvkfse.webp",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247310/vp21/g3_vhxbtf.webp",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247310/vp21/g1_omirdm.webp",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247310/vp21/g5_lcewae.webp",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247438/vp21/g2_xbem3z.webp",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247310/vp21/g4_obhq8o.webp",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247310/vp21/g6_jvkfse.webp",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247310/vp21/g3_vhxbtf.webp",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247310/vp21/g1_omirdm.webp",
+    "https://res.cloudinary.com/edcviitcom/image/upload/v1706247310/vp21/g5_lcewae.webp",
   ];
 
   const getUniqueIndices = (length) => {

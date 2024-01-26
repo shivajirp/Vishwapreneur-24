@@ -1,46 +1,80 @@
-// import { useState } from 'react'
+import { React, lazy, Suspense } from "react";
+
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
-import Landing from './Landing';
-import HaveYouPaid from './components/FormFlow/HaveYouPaid';
-import Login from './components/SigninUp/Login';
-import Signup from './components/SigninUp/Signup';
-import SignupPage from './components/SigninUp/SignupPage';
-import Footer from './components/homepage/Footer/Footer'
-import Navbar from './components/homepage/Navbar/Navbar'
-import {  Routes, Route } from "react-router-dom";
-import RegistrationForm from './components/FormFlow/Registration';
-import RegistrationSuccess from './components/FormFlow/Success';
-import SponsorsAll from './components/SponsorsPartners/SponsorsBig';
-import Guest from './components/guests/GuestInternal';
-import About from './components/about/About';
-import Contact from './components/contact/Contact';
-import Gallery from './components/gallery/Gallery';
+import "./App.css";
+import Landing from "./Landing";
+// import HaveYouPaid from './components/FormFlow/HaveYouPaid';
+// import Login from './components/SigninUp/Login';
+// import Signup from './components/SigninUp/Signup';
+// import SignupPage from './components/SigninUp/SignupPage';
+import Footer from "./components/homepage/Footer/Footer";
+import Navbar from "./components/homepage/Navbar/Navbar";
+import { Routes, Route } from "react-router-dom";
+import RegistrationForm from "./components/FormFlow/Registration";
+import RegistrationSuccess from "./components/FormFlow/Success";
+const SponsorsAll = lazy(() =>
+  import("./components/SponsorsPartners/SponsorsBig")
+);
+const Guest = lazy(() => import("./components/guests/GuestInternal"));
+const About = lazy(() => import("./components/about/About"));
+const Contact = lazy(() => import("./components/contact/Contact"));
+const Gallery = lazy(() => import("./components/gallery/Gallery"));
 
-function App() {  
+function App() {
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar />
       <Routes>
         <Route path="/*" element={<Landing />} />
-        <Route path="/signupOld" element={<Signup />} />
-        <Route path="/signup" element={<SignupPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/sponsors" element={<SponsorsAll />} />
-        <Route path="/guests" element={<Guest />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route
+          path="/sponsors"
+          element={
+            <Suspense fallback={<>loading</>}>
+              <SponsorsAll />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/guests"
+          element={
+            <Suspense fallback={<>loading</>}>
+              <Guest />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Suspense fallback={<>loading</>}>
+              <About />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <Suspense fallback={<>loading</>}>
+              <Contact />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/gallery"
+          element={
+            <Suspense fallback={<>loading</>}>
+              <Gallery />
+            </Suspense>
+          }
+        />
 
         {/* Form Flow */}
-        <Route path="/HaveYouPaid" element={<HaveYouPaid />} />
         <Route path="/register" element={<RegistrationForm />} />
         <Route path="/RegistrationSuccess" element={<RegistrationSuccess />} />
       </Routes>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
 
-export default App
+export default App;

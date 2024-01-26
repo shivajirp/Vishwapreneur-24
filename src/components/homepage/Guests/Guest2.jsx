@@ -133,69 +133,69 @@ const Review = () => {
       content:
         "An IIT Roorkee alumnus and founder of GeeksforGeeks. Apart from that, he has worked with DE Shaw and Co. as a software developer and JIIT Noida as an assistant professor.",
     },
-    {
-      img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1677267098/Speakers/nilesh-01_t7krar.png",
-      name: "Mr. Nilesh Vohra",
-      whoIsHe: "Blockchain & Web3 influencer",
-      content:
-        "Senior industry leader & Technologist. AI, Blockchain & Web3 influencer. Corporate span of 20 years includes Vice President & Head of IT (India CTO) - Vodafone Group; Deputy Vice President - Axis Bank, Head of Service Delivery - Wipro Limited.",
-    },
-    {
-      img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1677230276/Speakers/ARus-VP23_w9dfgb.jpg",
-      name: "Mr. Anshul Rustaggi",
-      whoIsHe: "Founder Totality Corp",
-      content:
-        "Enthusiast in Virtual Gaming. Developing ZionVerse, a metaverse gaming system. Studying in Blockchain technology since 2011. Investor in NFTs and DeFi's.",
-    },
-    {
-      img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1677265053/Speakers/vishnukorde-01_pfjft1.png",
-      name: "Mr. Vishnu Korde",
-      whoIsHe: "CEO & Chief Architect at StackOS",
-      content:
-        "Alumni of Harvard University. Skilled in Cryptography, Development operation, Business Planning, Team Management, Product Management, Negotiation, Analytical Skills, and Customer Relationship Management (CRM).",
-    },
-    {
-      img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676441222/Speakers/hairsh_vp23_parbuy.jpg",
-      name: "Mr. Harish Uthayakumar",
-      whoIsHe: "Co-Founder BlueLearn",
-      content:
-        "Featured in Forbes 30U30 Asia, the co-founder of Bluelearn, India's largest and smartest student community.",
-    },
-    {
-      img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676449856/Speakers/rishabh-jain_vp23_myt1sc.jpg",
-      name: "Mr. Rishabh Jain",
-      whoIsHe: "Creator at Labour Law Advisor",
-      content:
-        "Entrepreneur at Qriyo (EdTech Company) and Quick Payroll (Free Payroll app for MSME's). Has over 3 million subscribers on YouTube.",
-    },
-    {
-      img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676449220/Speakers/ashokramchandran_vp23_nynaor.jpg",
-      name: "Mr. Ashok Ramchandran",
-      whoIsHe: "CEO & President at Schindler India",
-      content:
-        "He has 30+ years of experience in the corporate world, was named one of India’s brightest business leaders under the age of 40, In the Economic Times 40 under Forty.",
-    },
-    {
-      img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676440812/Speakers/anantlodha_ywriun-removebg-preview_kgngpz.jpg",
-      name: "Mr. Anant Ladha",
-      whoIsHe: "Founder at Invest Aaj for Kal",
-      content:
-        "A national bestselling author and the Founder and CEO of Invest Aaj for Kal, a channel with over 2M+ subscribers.",
-    },
-    {
-      img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676442022/Speakers/adityaarora_vp23_sl7yra.jpg",
-      name: "Mr. Aditya Arora",
-      whoIsHe: "CEO at Faad Network",
-      content:
-        "An angel Investor and the CEO at Faad Network, an investor network platform. Also the youngest nominee for Padma Shri Award.",
-    },
-    {
-      img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676441340/Speakers/shreyanssancheti_vp23_ncbxln.jpg",
-      name: "Mr. Shreyans Sancheti",
-      whoIsHe: "Co-Founder BlueLearn",
-      content:
-        "A TEDx Speaker, BITS Pilani Goa Alumni, and the Co-Founder of Bluelearn, the largest and smartest student community.",
-    },
+    // {
+    //   img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1677267098/Speakers/nilesh-01_t7krar.png",
+    //   name: "Mr. Nilesh Vohra",
+    //   whoIsHe: "Blockchain & Web3 influencer",
+    //   content:
+    //     "Senior industry leader & Technologist. AI, Blockchain & Web3 influencer. Corporate span of 20 years includes Vice President & Head of IT (India CTO) - Vodafone Group; Deputy Vice President - Axis Bank, Head of Service Delivery - Wipro Limited.",
+    // },
+    // {
+    //   img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1677230276/Speakers/ARus-VP23_w9dfgb.jpg",
+    //   name: "Mr. Anshul Rustaggi",
+    //   whoIsHe: "Founder Totality Corp",
+    //   content:
+    //     "Enthusiast in Virtual Gaming. Developing ZionVerse, a metaverse gaming system. Studying in Blockchain technology since 2011. Investor in NFTs and DeFi's.",
+    // },
+    // {
+    //   img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1677265053/Speakers/vishnukorde-01_pfjft1.png",
+    //   name: "Mr. Vishnu Korde",
+    //   whoIsHe: "CEO & Chief Architect at StackOS",
+    //   content:
+    //     "Alumni of Harvard University. Skilled in Cryptography, Development operation, Business Planning, Team Management, Product Management, Negotiation, Analytical Skills, and Customer Relationship Management (CRM).",
+    // },
+    // {
+    //   img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676441222/Speakers/hairsh_vp23_parbuy.jpg",
+    //   name: "Mr. Harish Uthayakumar",
+    //   whoIsHe: "Co-Founder BlueLearn",
+    //   content:
+    //     "Featured in Forbes 30U30 Asia, the co-founder of Bluelearn, India's largest and smartest student community.",
+    // },
+    // {
+    //   img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676449856/Speakers/rishabh-jain_vp23_myt1sc.jpg",
+    //   name: "Mr. Rishabh Jain",
+    //   whoIsHe: "Creator at Labour Law Advisor",
+    //   content:
+    //     "Entrepreneur at Qriyo (EdTech Company) and Quick Payroll (Free Payroll app for MSME's). Has over 3 million subscribers on YouTube.",
+    // },
+    // {
+    //   img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676449220/Speakers/ashokramchandran_vp23_nynaor.jpg",
+    //   name: "Mr. Ashok Ramchandran",
+    //   whoIsHe: "CEO & President at Schindler India",
+    //   content:
+    //     "He has 30+ years of experience in the corporate world, was named one of India’s brightest business leaders under the age of 40, In the Economic Times 40 under Forty.",
+    // },
+    // {
+    //   img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676440812/Speakers/anantlodha_ywriun-removebg-preview_kgngpz.jpg",
+    //   name: "Mr. Anant Ladha",
+    //   whoIsHe: "Founder at Invest Aaj for Kal",
+    //   content:
+    //     "A national bestselling author and the Founder and CEO of Invest Aaj for Kal, a channel with over 2M+ subscribers.",
+    // },
+    // {
+    //   img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676442022/Speakers/adityaarora_vp23_sl7yra.jpg",
+    //   name: "Mr. Aditya Arora",
+    //   whoIsHe: "CEO at Faad Network",
+    //   content:
+    //     "An angel Investor and the CEO at Faad Network, an investor network platform. Also the youngest nominee for Padma Shri Award.",
+    // },
+    // {
+    //   img: "https://res.cloudinary.com/da5mmxnn3/image/upload/v1676441340/Speakers/shreyanssancheti_vp23_ncbxln.jpg",
+    //   name: "Mr. Shreyans Sancheti",
+    //   whoIsHe: "Co-Founder BlueLearn",
+    //   content:
+    //     "A TEDx Speaker, BITS Pilani Goa Alumni, and the Co-Founder of Bluelearn, the largest and smartest student community.",
+    // },
   ];
 
   return (
