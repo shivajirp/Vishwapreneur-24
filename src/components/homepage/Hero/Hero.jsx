@@ -122,7 +122,7 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useAnimation } from 'framer-motion';
 import imagel from '../../../assets/GroupL.png'
 import imager from '../../../assets/GroupR.png'
-import vplog from "https://res.cloudinary.com/edcviitcom/image/upload/v1706247311/vp21/logo_name_mnvell.webp";
+import vplog from "../../../assets/vpLogo.webp";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
