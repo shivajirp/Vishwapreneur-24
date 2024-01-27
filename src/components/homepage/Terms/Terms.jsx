@@ -3,7 +3,7 @@ import './Terms.css'; // Import your CSS file for Terms
 
 const Terms = () => {
   return (
-    <div className="terms-section flex place-content-center ">
+    <div className="terms-section flex place-content-center bg-black">
       {/* Card 1: Terms & Conditions
       <h1 className="main-heading bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-2xl font-bold text-center">Terms & Conditions</h1>
       <div className="terms-card">
@@ -40,7 +40,7 @@ const Terms = () => {
 
 <div
       id="guidelines"
-      class="sec-guidelines  bg-gradient-to-r from-[#7A79C7] to-white"
+      class="sec-guidelines  "
       data-aos="fade-up"
       data-aos-duration="2000"
     >

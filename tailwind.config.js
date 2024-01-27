@@ -31,6 +31,9 @@ export default {
           "100%": { transform: "translateX(-20%)" },
         },
       },
+      colors: {
+        "custom-black": "#0f090f",
+      },
     },
   },
   plugins: [],
