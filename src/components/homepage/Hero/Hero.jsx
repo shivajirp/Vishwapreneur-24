@@ -122,7 +122,7 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useAnimation } from 'framer-motion';
 import imagel from '../../../assets/GroupL.png'
 import imager from '../../../assets/GroupR.png'
-import vplog from "../../../assets/vp_hpe1ut.svg";
+import vplog from '../../../assets/vp_hpe1ut.svg'
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -187,7 +187,7 @@ const Hero = () => {
             <PointCircle />
           </Canvas>
 
-          <div className="absolute top-12 left-0 w-full flex justify-center">
+          {/* <div className="absolute top-12 left-0 w-full flex justify-center">
             <motion.div
               className="z-100 w-1/2 h-full relative "
               initial={{ opacity: 0, x: -100 }}
@@ -205,7 +205,7 @@ const Hero = () => {
             >
               <img src={imager} alt="" />
             </motion.div>
-          </div>
+          </div> */}
 
           <motion.div className='absolute z-10 top-[15rem]  transform -translate-x-1/2'
             initial={{ opacity: 0, scale: 0.5 }}

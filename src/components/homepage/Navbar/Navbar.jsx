@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ const Navbar = () => {
   const variants = {
     open: {
       clipPath: "circle(12000px at 50px 50px)",
-      transition: {
+      transition: { 
         type: "spring",
         stiffness: 20,
       },
@@ -78,7 +79,7 @@ const Navbar = () => {
     <nav className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50">
       <div onClick={() => navigate("/")}>
         <img
-          src="https://res.cloudinary.com/edcviitcom/image/upload/v1706247311/vp21/name_c8ommv.webp"
+          src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1703221409/VP%2724/Vishwapreneur_24_nfl766.png"
           className="w-[10rem] md:w-[27rem] lg:w-[30rem] filter brightness-120 contrast-150"
           alt="Logo"
         />
@@ -131,12 +132,15 @@ const Navbar = () => {
                 className="px-4 cursor-pointer capitalize py-6 text-4xl"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => {
-                  setNav(!nav);
-                  navigate("/" + link);
-                }}
               >
-                {link}
+                <Link
+                  onClick={() => setNav(!nav)}
+                  to={link}
+                  smooth
+                  duration={500}
+                >
+                  {link}
+                </Link>
               </motion.li>
             ))}
             <motion.li
@@ -146,8 +150,9 @@ const Navbar = () => {
               whileTap={{ scale: 0.95 }}
               key={links.length}
               onClick={() => {
+
                 navigate("/register");
-                setNav(!nav);
+                setNav(!nav); 
               }}
             >
               Register

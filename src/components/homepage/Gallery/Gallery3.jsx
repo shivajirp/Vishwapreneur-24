@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 const Gallery = () => {
-
   const initialImages = [
     "https://res.cloudinary.com/edcviitcom/image/upload/v1706247438/vp21/g2_xbem3z.webp",
     "https://res.cloudinary.com/edcviitcom/image/upload/v1706247310/vp21/g4_obhq8o.webp",

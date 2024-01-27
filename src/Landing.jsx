@@ -7,7 +7,7 @@ import FAQ from "./components/homepage/FAQ/FAQ";
 import Footer from "./components/homepage/Footer/Footer";
 // import Guest from "./components/homepage/Guests/Guest";
 import Guest2 from "./components/homepage/Guests/Guest2";
-import Gallery from "./components/homepage/Gallery/Gallery";
+// import Gallery from "./components/homepage/Gallery/Gallery";
 import Gallery2 from "./components/homepage/Gallery/Gallery2";
 import Reviews from "./components/homepage/Reviews/Reviews";
 // import Reviews2 from "./components/homepage/Reviews/Reviews2";
@@ -48,11 +48,11 @@ function Landing() {
       <SponsorsMedia></SponsorsMedia>
       {/* <Reviews2></Reviews2> */}
       <Reviews></Reviews>
-      {/* <Media2></Media2> */}
-      {/* <Testimonials></Testimonials> */}
+      {/* <Testimonia ls></Testimonia> */}
+      <Media2></Media2>
       {/* <Media></Media> */}
-      {/* <Terms></Terms> */}
-      {/* <FAQ></FAQ> */}
+      <Terms></Terms>
+      <FAQ></FAQ>
       <Contact></Contact>
     </div>
   );
