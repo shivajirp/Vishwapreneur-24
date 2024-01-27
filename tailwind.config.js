@@ -33,6 +33,8 @@ export default {
       },
       colors: {
         "custom-black": "#0f090f",
+        pinkish: "#f0b4e3",
+        whitish: "#ABABAD",
       },
     },
   },

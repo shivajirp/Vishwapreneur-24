@@ -44,7 +44,10 @@
     border-radius: 3vw;
 }
 
-
+.r-gradient{
+    background-image: radial-gradient(circle at 24.1% 68.8%, #191733 0%, #000000  80%);
+    
+}
 h1 {
     color: white;
     text-align: center;
