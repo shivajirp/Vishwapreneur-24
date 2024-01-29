@@ -1,9 +1,9 @@
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation,spring } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";// Import useInView from react-intersection-observer
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  visible: { opacity: 1, scale: 1,  transition:{type:spring,duration:0.5} },
   hidden: { opacity: 0, scale: 0 }
 };
 
