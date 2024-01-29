@@ -56,7 +56,7 @@ const SponsorsMedia = () => {
   ];
   return (
     <>
-      <div className="bg-black group">
+      <div className=" group">
         <h1 className="main-heading bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-4xl font-bold text-center py-8">
           Previous Sponsors
         </h1>
