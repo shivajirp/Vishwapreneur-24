@@ -89,7 +89,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className='flex w-screen h-[20rem]  place-content-center'>
+    <div className='flex w-screen h-fit  place-content-center'>
       <div className="reviews-section w-2/3   rounded-xl ">
       {/* <div className="reviews-section w-2/3 border-r-2 border-t-2  rounded-xl "> */}
         <h1 className="main-heading   bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-4xl font-bold text-center py-8">Reviews</h1>
