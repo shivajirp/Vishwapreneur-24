@@ -1,4 +1,5 @@
 import Hero from "./components/homepage/Hero/Hero";
+import Hero2 from "./components/homepage/Hero/Hero2";
 import About from "./components/homepage/About/About";
 // import Media from "./components/homepage/Media/media";
 import Media2 from "./components/homepage/Media/media2";
@@ -40,7 +41,8 @@ function Landing() {
       {/* <Guest></Guest> */}
       {/* <Sponsors></Sponsors> */}
       {/* <Gallery></Gallery> */}
-      <Hero></Hero>
+      {/* <Hero></Hero> */}
+      <Hero2></Hero2>
       <About></About>
       <Guest2></Guest2>
       {/* <Gallery2></Gallery2> */}

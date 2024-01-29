@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <div id="About mt-6 ">
-        <div className="pb-12 min-h-screen bg-fixed bg-cover bg-center bgImage">
+        <div className="pb-12 min-h-fit bg-fixed bg-cover bg-center bgImage">
           <div className="aboutCard ">
             <h1 className="main-heading pt-28 bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">
               About
