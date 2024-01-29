@@ -1,33 +1,47 @@
 import React from "react";
 import { FaEnvelope, FaHandsHelping, FaUserFriends, FaMicrophone } from "react-icons/fa";
+// import { contact } from "../Navbar/Navbar";
 
 const Contact = () => {
   return (
-    <div id="Contact">
+    <div name="contact" id="Contact" className="mt-12">
       <div className="p-4 ">
-      {/* <div className="p-4 bg-black"> */}
-      <p className="main-heading bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">Contact Us</p>
-      <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 px-10">
-        <Card
-          title="Speaking Opportunities"
-          subtitle="curation@vishwapreneur.in"
-          href="mailto:curation@vishwapreneur.in"
-          Icon={FaMicrophone}
-          phone={"+91 8668351747"}
-        />
-        <Card title="Sponsorship Opportunities" subtitle="edcflm.sponsorship@gmail.com " href="mailto:edcflm.sponsorship@gmail.com" Icon={FaHandsHelping} phone={"+91 9834204591"} />
-        <Card title="Collaboration Opportunities" subtitle='pr@vishwapreneur.in' href="mailto:pr@vishwapreneur.in" Icon={FaUserFriends} phone={"+91 8799842913"} />
-        <Card
-          title="Queries"
-          subtitle="contact@vishwapreneur.in"
-          href="mailto:contact@vishwapreneur.in "
-          phone="+91 9284320165"
-          Icon={FaEnvelope}
-        />
+        {/* <div className="p-4 bg-black"> */}
+        <p className="main-heading bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">
+          Contact Us
+        </p>
+        <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 px-10">
+          <Card
+            title="Speaking Opportunities"
+            subtitle="curation@vishwapreneur.in"
+            href="mailto:curation@vishwapreneur.in"
+            Icon={FaMicrophone}
+            phone={"+91 8668351747"}
+          />
+          <Card
+            title="Sponsorship Opportunities"
+            subtitle="edcflm.sponsorship@gmail.com "
+            href="mailto:edcflm.sponsorship@gmail.com"
+            Icon={FaHandsHelping}
+            phone={"+91 9834204591"}
+          />
+          <Card
+            title="Collaboration Opportunities"
+            subtitle="pr@vishwapreneur.in"
+            href="mailto:pr@vishwapreneur.in"
+            Icon={FaUserFriends}
+            phone={"+91 8799842913"}
+          />
+          <Card
+            title="Queries"
+            subtitle="contact@vishwapreneur.in"
+            href="mailto:contact@vishwapreneur.in "
+            phone="+91 9284320165"
+            Icon={FaEnvelope}
+          />
+        </div>
       </div>
     </div>
-    </div>
-    
   );
 };
 

@@ -76,8 +76,8 @@ const Gallery = () => {
     "col-span-2 row-span-2 md:col-span-1 md:row-span-1",
   ];
   return (
-    <div className="bg-black pt-10">
-      <h1 className="main-heading  md:py-10  bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">
+    <div name="gallery" className="bg-black pt-16">
+      <h1 className="main-heading  md:py-10 mt-5  bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">
         Gallery
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:px-[10rem] ">

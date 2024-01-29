@@ -46,10 +46,10 @@ const FaqAccordion = () => {
    };
   return (
     <div>
-      <h1 className="pt-12 bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8 ">
+      <h1 className="mt-12 bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center  ">
         FAQ's
       </h1>
-      <div class="faqs p-16">
+      <div class="faqs ">
         <div class="questions">
           <div class="top" data-aos="fade-right" data-aos-duration="2000">
             <div>
