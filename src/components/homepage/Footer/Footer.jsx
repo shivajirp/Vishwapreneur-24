@@ -6,17 +6,12 @@ import image from '../../../assets/Footerimg.svg'
 const Footer = () => {
   return (
     <div
-      className={`footer-section bg-custom-black overflow-hidden`}
-
-      // style={{
-      //   backgroundImage:url("https://res.cloudinary.com/di40y80dw/image/upload/v1705057286/Parallax/Group_426_k1hcfe.svg"),
-      //     // 'url("https://res.cloudinary.com/da5mmxnn3/image/upload/v1703939672/VP%2724/earth-seen-from-space_o2egfs.webp")',
-      // }}
+      className={`footer-section   bg-black overflow-hidden`}
     >
       <footer className="text-white py-12 ">
         <div
-          className={`w-full h-full  relative   scale-[100%] m-15 bg-[url(${image})]  bg-cover bg-no-repeat`}
-          style={{ backgroundImage: `url()` }}
+          className={`w-full h-full  relative   scale-[100%] m-15`}
+          // style={{ backgroundImage: `url(bg-[url('https://res.cloudinary.com/di40y80dw/image/upload/v1706507461/Parallax/footer_hwcatb.webp)])` }}
         >
           <div className="container mx-auto flex flex-col items-center">
             {/* Grid layout and content */}

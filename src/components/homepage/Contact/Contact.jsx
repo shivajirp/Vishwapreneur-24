@@ -4,21 +4,24 @@ import { FaEnvelope, FaHandsHelping, FaUserFriends, FaMicrophone } from "react-i
 const Contact = () => {
   return (
     <div id="Contact">
-      <div className="p-4 bg-black">
+      <div className="p-4 ">
+      {/* <div className="p-4 bg-black"> */}
       <p className="main-heading bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">Contact Us</p>
-      <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 px-10">
         <Card
           title="Speaking Opportunities"
           subtitle="curation@vishwapreneur.in"
           href="mailto:curation@vishwapreneur.in"
           Icon={FaMicrophone}
+          phone={"+91 8668351747"}
         />
-        <Card title="Sponsorship Opportunities" subtitle="edcflm.sponsorship@gmail.com" href="mailto:edcflm.sponsorship@gmail.com" Icon={FaHandsHelping} />
-        <Card title="Collaboration Opportunities" subtitle="pr@vishwapreneur.in" href="mailto:pr@vishwapreneur.in" Icon={FaUserFriends} />
+        <Card title="Sponsorship Opportunities" subtitle="edcflm.sponsorship@gmail.com " href="mailto:edcflm.sponsorship@gmail.com" Icon={FaHandsHelping} phone={"+91 9834204591"} />
+        <Card title="Collaboration Opportunities" subtitle='pr@vishwapreneur.in' href="mailto:pr@vishwapreneur.in" Icon={FaUserFriends} phone={"+91 8799842913"} />
         <Card
           title="Queries"
-          subtitle="contact@vishwapreneur.in "
+          subtitle="contact@vishwapreneur.in"
           href="mailto:contact@vishwapreneur.in "
+          phone="+91 9284320165"
           Icon={FaEnvelope}
         />
       </div>
@@ -28,7 +31,7 @@ const Contact = () => {
   );
 };
 
-const Card = ({ title, subtitle, Icon, href }) => {
+const Card = ({ title, subtitle, Icon, href,phone }) => {
   return (
     <a
       href={href}
@@ -43,6 +46,10 @@ const Card = ({ title, subtitle, Icon, href }) => {
       </h3>
       <p className="text-slate-400 group-hover:text-violet-200 relative z-10 duration-300">
         {subtitle}
+      </p>
+      {/* <br /> */}
+      <p className="text-slate-400 group-hover:text-violet-200 relative z-10 duration-300">
+        {phone}
       </p>
     </a>
   );

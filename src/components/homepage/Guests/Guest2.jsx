@@ -1,6 +1,7 @@
 import React, { useEffect , useRef} from 'react';
 import './Guest2.css';
 import ScrollAnimation from '../../Animations/ScrollAnimation';
+import { AnimatePresence } from 'framer-motion';
 // import ''
 
 const Guest2 = () => {
@@ -201,6 +202,8 @@ const Guest2 = () => {
   ];
 
   return (
+    <AnimatePresence>
+
     <div className="main-container">
       <h1 className="main-heading pt-28 bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">
               Previous Guest
@@ -237,6 +240,7 @@ const Guest2 = () => {
         ))}
       </div>
     </div>
+  </AnimatePresence>
   );
 };
 
