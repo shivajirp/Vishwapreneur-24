@@ -277,7 +277,7 @@ const Media2 = () => {
 
   return (
     <div className="relative mt-32">
-      <h1 className="main-heading pt-10 mb-0 bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">
+      <h1 className="main-heading pt-10 mb-0 bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-2">
         Social Media Footfall
       </h1>
       <div

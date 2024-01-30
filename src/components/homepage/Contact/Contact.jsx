@@ -10,7 +10,7 @@ const Contact = () => {
         <p className="main-heading bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">
           Contact Us
         </p>
-        <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 px-10">
+        <div className="grid gap-4 grid-col-1 md:grid-cols-2 lg:grid-cols-4 px-10">
           <Card
             title="Speaking Opportunities"
             subtitle="curation@vishwapreneur.in"
