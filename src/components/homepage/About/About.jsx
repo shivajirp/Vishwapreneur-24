@@ -49,6 +49,7 @@
 
 import React from 'react'
 import './About.css';
+<<<<<<< HEAD
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -68,6 +69,16 @@ const About = () => {
           <motion.div 
           className="aboutCard" 
           >
+=======
+// import { about } from '../Navbar/Navbar';
+
+const About = () => {
+  return (
+    <div name="about" className='pt-16'>
+      <div  id="About ">
+        <div className="pb-12 min-h-fit bg-fixed bg-cover bg-center bgImage">
+          <div className="aboutCard ">
+>>>>>>> 27c1b70642ec53568a7a625ab0b167e521b416e4
             <h1 className="main-heading pt-28 bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">
               About
             </h1>
@@ -101,7 +112,7 @@ const About = () => {
           </ScrollAnimation1>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
