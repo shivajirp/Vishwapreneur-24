@@ -4,10 +4,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Reviews.css'; // Import your CSS file for Reviews
 
-import person1Image from '../../../assets/image.png';
-import person2Image from '../../../assets/image.png';
-// Import other images similarly
-
 const reviewsData = [
   {
     id: 1,
@@ -89,7 +85,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className='flex w-screen h-fit  place-content-center'>
+    <div className='flex w-screen h-fit  place-content-center mt-44'>
       <div className="reviews-section w-2/3   rounded-xl ">
       {/* <div className="reviews-section w-2/3 border-r-2 border-t-2  rounded-xl "> */}
         <h1 className="main-heading   bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-4xl font-bold text-center py-8">Reviews</h1>

@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,7 +11,7 @@ const Navbar = () => {
   const variants = {
     open: {
       clipPath: "circle(12000px at 50px 50px)",
-      transition: { 
+      transition: {
         type: "spring",
         stiffness: 20,
       },
@@ -63,7 +62,7 @@ const Navbar = () => {
     },
     {
       id: 3,
-      link: "guests",
+      link: "guest",
     },
     {
       id: 4,
@@ -74,7 +73,7 @@ const Navbar = () => {
       link: "contact",
     },
   ];
-
+  
   return (
     <nav className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50">
       <div onClick={() => navigate("/")}>
@@ -91,11 +90,20 @@ const Navbar = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-gray-400 hover:text-white transition duration-300"
             onClick={() => {
-              window.scrollTo(0, 0);
-              navigate("/" + link);
+              console.log(link);
+              // scrollToSection(contact);
             }}
           >
-            {link}
+            <Link
+              activeClass="active"
+              to={link}
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              {link}
+            </Link>
           </li>
         ))}
 
@@ -150,9 +158,8 @@ const Navbar = () => {
               whileTap={{ scale: 0.95 }}
               key={links.length}
               onClick={() => {
-
                 navigate("/register");
-                setNav(!nav); 
+                setNav(!nav);
               }}
             >
               Register
@@ -165,3 +172,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+// export {
+//   about,contact, gallery,guests
+// }

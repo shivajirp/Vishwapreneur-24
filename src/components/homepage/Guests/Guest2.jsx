@@ -204,9 +204,9 @@ const Guest2 = () => {
   return (
     <AnimatePresence>
 
-    <div className="main-container">
+    <div className="main-container pt-12" name="guest" >
       <h1 className="main-heading pt-28 bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">
-              Previous Guest
+              Previous Guests
       </h1>
 
       <div className="card-container" ref={cardContainerRef}>
