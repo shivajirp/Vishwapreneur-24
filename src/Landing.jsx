@@ -4,7 +4,8 @@ import About from "./components/homepage/About/About";
 // import Media from "./components/homepage/Media/media";
 import Media2 from "./components/homepage/Media/media2";
 import Contact from "./components/homepage/Contact/Contact";
-import FAQ from "./components/homepage/FAQ/FAQ";
+import FAQ2 from "./components/homepage/FAQ/FAQ2";
+// import FAQ from "./components/homepage/FAQ/FAQ";
 import Footer from "./components/homepage/Footer/Footer";
 // import Guest from "./components/homepage/Guests/Guest";
 import Guest2 from "./components/homepage/Guests/Guest2";
@@ -54,7 +55,8 @@ function Landing() {
       <Media2></Media2>
       {/* <Media></Media> */}
       <Terms></Terms>
-      <FAQ></FAQ>
+      <FAQ2></FAQ2>
+      {/* <FAQ></FAQ> */}
       <Contact></Contact>
     </div>
   );
