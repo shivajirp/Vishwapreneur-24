@@ -19,8 +19,8 @@ const Contact = () => {
         <Card title="Collaboration Opportunities" subtitle='pr@vishwapreneur.in' href="mailto:pr@vishwapreneur.in" Icon={FaUserFriends} phone={"+91 8799842913"} />
         <Card
           title="Queries"
-          subtitle="contact@vishwapreneur.in"
-          href="mailto:contact@vishwapreneur.in "
+          subtitle="sales@vishwapreneur.in"
+          href="mailto:sales@vishwapreneur.in "
           phone="+91 9284320165"
           Icon={FaEnvelope}
         />

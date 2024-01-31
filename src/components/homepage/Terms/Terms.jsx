@@ -14,13 +14,13 @@ const Terms = () => {
             <p className="text-sm">
               <h3 className="text-xl font-semibold text-pinkish">Age Limit</h3>
               Any person above the age of 13 is allowed to join us for
-              Vishwapreneur'23
+              Vishwapreneur'24
             </p>
             <p className="text-sm">
               <h3 className="text-xl font-semibold text-pinkish">
                 Privacy Policy
               </h3>
-              By registering for Vishwapreneur'23, you consent to the collection
+              By registering for Vishwapreneur'24, you consent to the collection
               and use of this information as set forth.
             </p>
             <p className="text-sm">
