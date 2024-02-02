@@ -75,3 +75,129 @@
     margin: 0 20px 20px; /* Adjusted margin */
   }
 }
+
+
+/* button {
+    font: 18px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 0.2s;
+    transform: scale(2);
+    border: 1px solid;
+  }
+  
+  button span {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    color: #fff;
+  }
+  
+  button .liquid {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #FF229F;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    transition: 0.6s;
+  }
+  
+  button .liquid::after,
+  button .liquid::before {
+    position: absolute;
+    content: "🪐";
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    transform: translate(-25%, -75%);
+  }
+  
+  button .liquid::after {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    box-shadow: 0 0 10px 5px #33053C, inset 0 0 5px #33053C;
+    animation: animate 5s linear infinite;
+    opacity: 0.8;
+  }
+  
+  button .liquid::before {
+    content: "🚀";
+    border-radius: 40%;
+    box-shadow: 0 0 10px rgba(26, 26, 26, 0.5),
+          inset 0 0 5px rgba(26, 26, 26, 0.5);
+    background: rgba(26, 26, 26, 0.5);
+    animation: animate_3881 7s linear infinite;
+  }
+  
+  @keyframes animate_3881 {
+    0% {
+      transform: translate(-25%, -75%) rotate(0);
+    }
+  
+    100% {
+      transform: translate(-25%, -75%) rotate(360deg);
+    }
+  }
+  
+  button:hover .liquid {
+    top: -120px;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 5px #33053C, inset 0 0 5px #33053C;
+    transition-delay: 0.2s;
+  }
+   */
+
+   .space-button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #292b2c; /* Black background color */
+    border: 2px solid #00AFB9; /* Border color */
+    padding: 15px 30px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .space-button:hover {
+    background-color: #00AFB9; /* Hover background color */
+    color: black; /* Hover text color */
+    border-color: #292b2c; /* Hover border color */
+  }
+  
+  .space-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('space-background.jpg') center center/cover;
+    mix-blend-mode: multiply;
+    z-index: -1;
+  }
+  
+  /* Optional: Add some shine animation */
+  .space-button:hover:before {
+    animation: shine 1.5s infinite;
+  }
+  
+  @keyframes shine {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+  }
+  
