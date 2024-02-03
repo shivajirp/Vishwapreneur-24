@@ -46,9 +46,16 @@ section{
 
 .card{
     perspective: 1200px;
+     backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.32);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     /* background-image: url("https://img.freepik.com/premium-vector/abstract-tech-sci-fi-hologram-frame-template-design_115579-1108.jpg"); */
     
 }
+
+
 
 .card:hover {
     transform: rotateY(-10deg) rotateX(10deg);
@@ -219,3 +226,44 @@ section{
         margin: 0 20px;
     }
 }
+
+[class*='si-buttons-scifi'] shine {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    -webkit-clip-path: var(--button-shape);
+            clip-path: var(--button-shape);
+  }
+  
+  [class*='si-buttons-scifi'].disabled shine,
+  [class*='si-buttons-scifi']:disabled shine {
+    display: none;
+  }
+  
+  [class*='si-buttons-scifi'] shine:after {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 -70px;
+    width: 30px;
+    opacity: 0.8;
+    background: rgb(255, 255, 255);
+    transition: all .3s linear;
+    transform: skewX(-15deg) translateX(0);
+    animation: shine 3.5s ease-in-out infinite;
+  }
+  
+  [mode*='light'] shine:after {
+    opacity: 0.5;
+    background: var(--border-color);
+  }
+  
+  [class*='si-buttons-scifi']:hover shine:after {
+    animation: unset;
+  }
+  
+  @keyframes shine {
+    70% {left: -70px}
+    100% {left: calc(100% + 70px)}
+  }
+
+  
