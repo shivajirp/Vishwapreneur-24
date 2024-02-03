@@ -14,6 +14,7 @@ import { Routes, Route } from "react-router-dom";
 import RegistrationForm from "./components/FormFlow/Registration";
 import RegistrationSuccess from "./components/FormFlow/Success";
 import Guest3 from "./components/homepage/Guests/Guest3";
+import Register from "./components/homepage/Registeration/Register";
 const SponsorsAll = lazy(() =>
   import("./components/SponsorsPartners/SponsorsBig")
 );
@@ -74,6 +75,7 @@ function App() {
 
         {/* Form Flow */}
         <Route path="/register" element={<RegistrationForm />} />
+        <Route exact path = "/How_to_register" element = {<Register />}/>
         <Route path="/RegistrationSuccess" element={<RegistrationSuccess />} />
       </Routes>
       <Footer />

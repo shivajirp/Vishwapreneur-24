@@ -124,6 +124,9 @@ import imagel from '../../../assets/GroupL.png'
 import imager from '../../../assets/GroupR.png'
 import vplog from '../../../assets/vp_hpe1ut.svg'
 import './Hero.css'
+import Button from "../Button/Button";
+import { Link } from 'react-router-dom';
+
 
 const Hero = () => {
 
@@ -150,7 +153,18 @@ const Hero = () => {
             <motion.img src={vplog} className='h-96 opacity-100' alt="" />
           </motion.div>
         </AnimatePresence>
+        <div className="my_register_button">
+          <Button></Button>
+          <p id="tutorial" style={{ color: 'white', paddingTop: "30px" }}>
+            <Link to="/How_to_register" style={{ textDecoration: 'none', color: 'white' }}>
+                How to register?
+            </Link>
+          </p>
+        </div>
+        
       </div>
+      
+      
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 import './Footer.css'
 import image from '../../../assets/Footerimg.svg'
 import image2 from '../../../assets/footer 1.png'
+import "@fortawesome/fontawesome-free/css/all.css";
 
 const Footer = () => {
   return (
@@ -37,7 +38,7 @@ const Footer = () => {
               {/* ... (rest of the Quick Links section) */}
               <ul className="list-none">
                 <li className="mb-2 hover:scale-105">
-                  <a href="#">Register</a>
+                  <a href="https://learner.vierp.in/" target="_blank">Register</a>
                 </li>
                 <li className="mb-2 hover:scale-105">
                   <a href="#">Our Team</a>
@@ -66,30 +67,25 @@ const Footer = () => {
               </p>
               {/* ... (rest of the Follow Us section) */}
               <div className="flex space-x-4 -ml-4">
-                <a
-                  href="#"
-                  className="text-2xl transition duration-300 transform hover:scale-125"
-                >
-                  <FaInstagram />
-                </a>
-                <a
-                  href="#"
-                  className="text-2xl transition duration-300 transform hover:scale-125"
-                >
-                  <FaLinkedin />
-                </a>
-                <a
-                  href="#"
-                  className="text-2xl transition duration-300 transform hover:scale-125"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  href="#"
-                  className="text-2xl transition duration-300 transform hover:scale-125"
-                >
-                  <FaYoutube />
-                </a>
+              <a href="https://www.instagram.com/edcviit/" target="_blank">
+                    <i className="fa-brands fa-instagram text-2xl transition duration-300 transform hover:scale-125"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/entrepreneurship-development-cell-viit/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in text-2xl transition duration-300 transform hover:scale-125"></i>
+              </a>
+                <a href="https://twitter.com/edcviit" target="_blank">
+                    <i class="fa-brands fa-x-twitter text-2xl transition duration-300 transform hover:scale-125"></i>
+                  </a>
+                  <a href="https://www.youtube.com/@edcviit" target="_blank">
+                    <i
+                      class="fa-brands fa-youtube
+                      text-2xl
+                      transition
+                      duration-300
+                      transform
+                      hover:scale-125"
+                    ></i>
+                  </a>
               </div>
             </div>
 

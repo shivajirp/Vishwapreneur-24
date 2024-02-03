@@ -126,3 +126,11 @@
 .star-field .layer:nth-child(4) {
     animation: sf-fly-by-4 5s linear infinite;
 }
+
+.my_register_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 550px;
+}
