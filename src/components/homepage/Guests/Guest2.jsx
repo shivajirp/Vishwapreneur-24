@@ -243,8 +243,8 @@ const Guest2 = () => {
         ))}
       </div>
       <Link to="/new-guest">
-      <button class="space-button" style={{marginTop:"40px"}}>View More</button>
-    </Link>
+        <button class="space-button" style={{marginTop:"40px"}}>View More</button>
+      </Link>
     </div>
   </AnimatePresence>
   );
