@@ -225,7 +225,7 @@ const Guest2 = () => {
                   <h2 className="card-name">{guest.name}</h2>
                   <p className="card-description" style={{ color: 'white' }}>{guest.content}</p>
 
-                  <div className="card-media">
+                  {/* <div className="card-media">
                     <a href="#">
                       <i className="uil uil-facebook-f"></i>
                     </a>
@@ -235,7 +235,7 @@ const Guest2 = () => {
                     <a href="#">
                       <i className="uil uil-instagram"></i>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
           </ScrollAnimation>
