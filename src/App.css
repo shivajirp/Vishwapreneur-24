@@ -5,6 +5,14 @@
 .animate-marquee2:hover {
   animation-play-state: paused;
 }
+
+@font-face {
+  font-family: 'BatmanForever';
+  src: url('./batmfa__.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   overflow-x: hidden;
   background-color: black;
