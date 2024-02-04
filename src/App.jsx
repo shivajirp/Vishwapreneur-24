@@ -10,11 +10,12 @@ import Landing from "./Landing";
 // import SignupPage from './components/SigninUp/SignupPage';
 import Footer from "./components/homepage/Footer/Footer";
 import Navbar from "./components/homepage/Navbar/Navbar";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import RegistrationForm from "./components/FormFlow/Registration";
 import RegistrationSuccess from "./components/FormFlow/Success";
 import Guest3 from "./components/homepage/Guests/Guest3";
 import Register from "./components/homepage/Registeration/Register";
+
 const SponsorsAll = lazy(() =>
   import("./components/SponsorsPartners/SponsorsBig")
 );
@@ -23,13 +24,12 @@ const About = lazy(() => import("./components/about/About"));
 const Contact = lazy(() => import("./components/contact/Contact"));
 const Gallery = lazy(() => import("./components/gallery/Gallery"));
 
-
 function App() {
   return (
     <div>
-      <Navbar />
       <Routes>
-        <Route path="/*" element={<Landing />} />
+        <Route path="/#location" element={<Landing />} />
+        <Route path="/" element={<Landing />} />
         <Route
           path="/sponsors"
           element={
@@ -54,7 +54,7 @@ function App() {
             </Suspense>
           }
         />
-        
+
         <Route exact path="/new-guest" element={<Guest3 />} />
         <Route
           path="/contact"
@@ -75,8 +75,9 @@ function App() {
 
         {/* Form Flow */}
         <Route path="/register" element={<RegistrationForm />} />
-        <Route exact path = "/How_to_register" element = {<Register />}/>
+        <Route exact path="/How_to_register" element={<Register />} />
         <Route path="/RegistrationSuccess" element={<RegistrationSuccess />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </div>

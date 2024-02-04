@@ -20,19 +20,26 @@ import SponsorsMedia from "./components/homepage/SponsorsMedia/SponsorsMedia";
 import Navbar from "./components/homepage/Navbar/Navbar";
 import Gallery3 from "./components/homepage/Gallery/Gallery3";
 import { useEffect } from "react";
-
 function Landing() {
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    // window.scrollTo(0, 0);
+    const fragment = window.location.hash.substring(1);
+    console.log(fragment);
+    const targetElement = fragment && document.getElementById(fragment);
+
+    // If the element is found, scroll to it
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <div>
-
+      <Navbar></Navbar>
       <Hero2></Hero2>
       <About></About>
       <Guest2></Guest2>
-      <Gallery3/>
+      <Gallery3 />
       <SponsorsMedia></SponsorsMedia>
       <Reviews></Reviews>
       <Media2></Media2>

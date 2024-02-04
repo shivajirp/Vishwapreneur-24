@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const navigate = useNavigate();
+  const [otherThanHomepage, setOtherThanHomepage] = useState(false);
 
   const variants = {
     open: {
@@ -73,7 +74,14 @@ const Navbar = () => {
       link: "contact",
     },
   ];
-  
+
+  useEffect(() => {
+    const pathname = window.location.pathname;
+    if (pathname != "/") {
+      console.log("setting setOtherThanHomepage");
+      setOtherThanHomepage(true);
+    }
+  }, []);
   return (
     <nav className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50">
       <div onClick={() => navigate("/")}>
@@ -91,22 +99,36 @@ const Navbar = () => {
             className="px-4 cursor-pointer capitalize font-medium text-gray-400 hover:text-white transition duration-300"
             onClick={() => {
               console.log(link);
-              // scrollToSection(contact);
             }}
           >
-            <Link
-              activeClass="active"
-              to={link}
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              {link}
-            </Link>
+            {otherThanHomepage ? (
+              <>
+                {" "}
+                <button
+                  onClick={() => {
+                    navigate("/#" + link);
+                  }}
+                >
+                  {link}
+                </button>
+              </>
+            ) : (
+              <>
+                {" "}
+                <Link
+                  activeClass="active"
+                  to={link}
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  {link}
+                </Link>
+              </>
+            )}
           </li>
         ))}
-
         <li
           key={links.length}
           className="px-4 cursor-pointer capitalize font-medium text-gray-400 hover:text-white transition duration-300"
@@ -132,39 +154,78 @@ const Navbar = () => {
           variants={variants}
           className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500"
         >
-          <motion.div variants={varients1} className="my_links">
-            {links.map(({ id, link }) => (
+          {otherThanHomepage ? (
+            <motion.div variants={varients1} className="my_links">
+              {links.map(({ id, link }) => (
+                <motion.li
+                  key={id}
+                  variants={itemVarients}
+                  className="px-4 cursor-pointer capitalize py-6 text-4xl"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <button
+                    onClick={() => {
+                      setNav(!nav);
+                      navigate("/#" + link);
+                    }}
+                  >
+                    {link}
+                  </button>
+                </motion.li>
+              ))}
               <motion.li
-                key={id}
                 variants={itemVarients}
                 className="px-4 cursor-pointer capitalize py-6 text-4xl"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
+                key={links.length}
+                onClick={() => {
+                  navigate("/register");
+                  setNav(!nav);
+                }}
               >
-                <Link
-                  onClick={() => setNav(!nav)}
-                  to={link}
-                  smooth
-                  duration={500}
-                >
-                  {link}
-                </Link>
+                Register
               </motion.li>
-            ))}
-            <motion.li
-              variants={itemVarients}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              key={links.length}
-              onClick={() => {
-                navigate("/register");
-                setNav(!nav);
-              }}
-            >
-              Register
-            </motion.li>
-          </motion.div>
+            </motion.div>
+          ) : (
+            <motion.div variants={varients1} className="my_links">
+              {links.map(({ id, link }) => (
+                <motion.li
+                  key={id}
+                  variants={itemVarients}
+                  className="px-4 cursor-pointer capitalize py-6 text-4xl"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link
+                    onClick={() => {
+                      setNav(!nav);
+                      navigate("/#" + link);
+                    }}
+                    to={link}
+                    smooth
+                    duration={500}
+                  >
+                    {link}
+                  </Link>
+                </motion.li>
+              ))}
+              <motion.li
+                variants={itemVarients}
+                className="px-4 cursor-pointer capitalize py-6 text-4xl"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                key={links.length}
+                onClick={() => {
+                  navigate("/register");
+                  setNav(!nav);
+                }}
+              >
+                Register
+              </motion.li>
+            </motion.div>
+          )}
         </motion.ul>
       )}
     </nav>
@@ -172,6 +233,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-// export {
-//   about,contact, gallery,guests
-// }

@@ -4,7 +4,7 @@ import { FaEnvelope, FaHandsHelping, FaUserFriends, FaMicrophone } from "react-i
 
 const Contact = () => {
   return (
-    <div name="contact" id="Contact" className="mt-12">
+    <div name="contact" id="contact" className="mt-12">
       <div className="p-4 ">
         {/* <div className="p-4 bg-black"> */}
         <p className="main-heading bg-gradient-to-r from-[#b74b9b] to-white text-transparent bg-clip-text text-3xl font-bold text-center py-8">
